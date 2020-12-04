@@ -39,14 +39,14 @@ module.exports = function (app) {
         case 0:
           res.status(200).json(convertJson);
           break;
-        case 3:
-          res.json({ error: 'invalid number and unit' });
+        case 1:
+          res.json({ error: 'invalid number' });
           break;
         case 2:
           res.json({ error: 'invalid unit' });
           break;
-        case 1:
-          res.json({ error: 'invalid number' });
+        case 3:
+          res.json({ error: 'invalid number and unit' });
           break;
         default:
       }
